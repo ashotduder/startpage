@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internet Tools Final Project Spring 2017
+    Author: Glenn Booth
+    Written in Atom IDE. Tested with Firefox. -->
+    <meta charset="UTF-8">
+    <title>Start Page</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|VT323" rel="stylesheet">
+    <style>
+    /* Start page CSS */
+      a{
+        text-decoration:none;
+        color: black;
+      }
+
+      a:hover {
+        color: #ff1a1a;
+      }
+
+      body{
+        margin:0px;
+        background: #0033cc;
+      }
+
+      .container {
+        height: 150px;
+        width: 700px;
+        margin: 100px auto;
+        position: relative;
+        top: 50px;
+        left: auto;
+        box-shadow: 4px 8px 10px #000;
+      }
+
+      #title {
+        text-align: center;
+        font-size: 36px;
+        top: 0px;
+        position: relative;
+        height: 80px;
+        background: #b3b3b3;
+        font-family: 'Inconsolata', 'serif';
+      }
+
+      #title a {transition: .3s;}
+
+      #linkgroup{
+        height: 260px;
+        background: #b3b3b3;
+        font-size: 26px;
+        font-family: 'VT323', 'sans-serif';
+      }
+
+      .linkdiv{
+        width: 200px;
+        height: 85px;
+      }
+
+      #g1{ /* Left column of links */
+        position: absolute;
+        top: 2px;
+        left: 10px;
+      }
+
+      #g2{ /* Middle column of links */
+        position: absolute;
+        top: 2px;
+        left: 260px;
+      }
+
+      #g3{ /* Right column of links */
+        position: absolute;
+        top: 2px;
+        left: 500px;
+      }
+
+      .links{
+        display: block;
+        text-align: center;
+        transition: .2s;
+        position: relative;
+        top: 10px;
+      }
+
+      p {
+        color:#ff6600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="title">
+      <h2> The <a href="index.html">Nostromo</a> Start Page </h2>
+    </div>
+    <div class="container" id="linkgroup">
+     <div class="linkdiv" id="g1"> <!-- First group of links -->
+       <p class="links">News 'n shit</p>
+       <a class="links" href="https://news.ycombinator.com/news"> Hacker News </a>
+        <a class="links" href="https://lobste.rs/">Lobsters</a>
+        <a class="links" href="http://www.fark.com/">Fark</a>
+        <a class="links" href="http://monstershack.net">MonsterShack</a>
+        <a class="links" href="http://cinemassacre.com/">Cinemassacre</a>
+        <a class="links" href="https://www.full30.com/">Full30</a>
+      </div>
+     <div class="linkdiv" id="g2"> <!-- Second group of links -->
+       <p class="links">Forums</p>
+      <a class="links" href="https://www.reddit.com/user/HardZero/m/techstuff/">m/TechStuff</a>
+      <a class="links" href="https://atariage.com/forums/">AtariAge</a>
+      <a class="links" href="http://www.vogons.org/index.php">Vogons</a>
+     </div>
+     <div class="linkdiv" id="g3">
+       <p class="links">Chan</p>
+      <a class="links" href="https://lainchan.org/%CE%A9/index.html">/tech/</a>
+      <a class="links" href="https://lainchan.org/lit/index.html">/lit/</a>
+      <a class="links" href="https://boards.4chan.org/g/">/g/</a>
+      <a class="links" href="https://boards.4chan.org/k/">/k/</a>
+      <a class="links" href="https://boards.4chan.org/wg/">/wg/</a>
+
+     </div>
+    </div>
+  </body>
+</html>
